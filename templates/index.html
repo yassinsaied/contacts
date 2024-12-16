@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Gestion des Contacts</title>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+		/>
+		<link rel="stylesheet" href="assets/css/styles.css" />
+	</head>
+
+	<body>
+		<div id="main-container">
+			<!-- Le contenu (liste, etc.) sera chargé via AJAX -->
+			<div class="search-container">
+				<input
+					type="text"
+					id="search"
+					placeholder="Rechercher un contact..."
+				/>
+				<i class="fas fa-search icon-search"></i>
+				<!-- Loupe -->
+				<i class="fas fa-times icon-clear" style="display: none"></i>
+				<!-- Annuler -->
+			</div>
+			<div id="contact-container">
+				<!-- list_contacts.php chargera le template modifié -->
+			</div>
+		</div>
+
+		<!-- Popup -->
+		<div id="popup" class="popup" style="display: none">
+			<div class="popup-content" id="popup-body">
+				<!-- Détails du contact chargés ici -->
+			</div>
+			<button id="close-popup" class="btn-close">Fermer</button>
+		</div>
+
+		<script src="assets/js/jquery-3.7.1.min.js"></script>
+		<script src="assets/js/scripts.js"></script>
+	</body>
+</html>
